@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa; 
+    line-height: 1.5rem;
+    padding-bottom: 40px;
+}
+
+.header {
+    padding: 2rem;
+    background: white; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    left: 0;
+    right: 0; 
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#search-container {
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    transition: width 0.5s ease-in-out;
+}
+
+#search-container.expanded {
+    width: 100%;
+}
+
+.search-icon {
+    width: 20px; /* Adjust size as needed */
+    height: 20px;
+    margin-right: 10px;
+}
+
+input#search {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+}
+
+.courses {
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.courses-button {
+    font-size: 14px;
+    padding: 12px 20px;
+    background: #ebebeb;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer; 
+}
+
+.courses-button a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .weekly-polls,
+    .resources,
+    .blog-posts {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .navigation {
+        padding: 0.5rem;
+    }
+}

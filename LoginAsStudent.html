@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud-Based E-Learning Platform for Babcock Students </title>
+    <link rel="stylesheet" href="CSS/SignpUp.css">
+
+</head>
+<body>
+    <div class="Container"> 
+        <h2> Welcome to BU-Drive </h2>
+        <p class="subtitle"> One place for everything. </p>
+        
+        <form id="SignUp-form" method="post" action="StudentLoginAccount.php">
+            <input type="email" id="email" name="email" placeholder="Email" required> <br>
+
+            <div class="password-container">
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <img src="Images/hide.png" alt="Toggle Password" class="eye-icon" onclick="togglePassword()">
+            </div>
+            <p class="terms"> Don't have an account? <a href="SignUpAs.html"> Sign Up </a></p>
+            <button type="submit"> Log In </button>
+        </form>
+
+    <script src="JS/function.js"></script>
+</body>
+</html>
