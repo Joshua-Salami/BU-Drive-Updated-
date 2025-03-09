@@ -29,9 +29,9 @@
 
 </head>
 <body>
-    <header class="header">
-        <div class="logo"> BU-Drive 🚗 </div>
-        <div class="notifications"> 🔔 </div>
+<header class="header">
+        <div class="logo"><a href="../HTML/homepage.html">BU-Drive <img src="../Icons/externaldrive.fill.badge.icloud.png" alt="logo"></a></div>
+        <div class="notifications"><a href="#"><img src="../Icons/bell.png" alt="Notifications icon"></a></div>
     </header>
 
     <div class="container">
@@ -44,20 +44,21 @@
                 </div>
                 <h3 id="empty" style="display: none">No resources found.</h3>
 
+        
     <nav class="navigation">
-        <a href="HTML/homepage.html" class="nav-item">
-            🏠
+        <a href="../HTML/homepage.html" class="nav-item">
+            <img src="../Icons/house.fill.png" alt="Profile icon">
             <span>Home</span>
-        <a href="Resources.html" class="nav-item">
-            📚
+        <a href="../HTML/Resources.html" class="nav-item">
+            <img src="../Icons/folder.png" alt="Profile icon">
             <span>Resources</span>
         </a>
-        <a href="MyCourses.html" class="nav-item">
-            🎓
+        <a href="../HTML/MyCourses.html" class="nav-item">
+            <img src="../Icons/my courses.png" alt="Profile icon">
             <span>My Courses</span>
         </a>
-        <a href="#" class="nav-item">
-            👤
+        <a href="../HTML/Profile.html" class="nav-item">
+            <img src="../Icons/profile.png" alt="Profile icon">
             <span>Profile</span>
         </a>
     </nav>
